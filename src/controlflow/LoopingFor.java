@@ -9,6 +9,9 @@ public class LoopingFor {
 
         for (double rate = 7.5; rate <= 10.0; rate += 0.25) {
             double interetstAmount = calculateInterest(100.0, rate);
+            if (interetstAmount > 8.5) {
+                break;
+            }
             System.out.println("100 at " + rate + " % interest = " + interetstAmount);
         }
     }
